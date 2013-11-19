@@ -27,12 +27,27 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
+		<?php /*$this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contacto', 'url'=>array('/site/contact')),
                                 array('label'=>'Saludo', 'url'=>array('/saludo/index')),
+				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+			),
+		));*/ ?>
+                <?php  $this->widget('application.extensions.mbmenu.MbMenu',array(
+			'items'=>array(
+				array('label'=>'Inicio', 'url'=>array('/site/index')),				
+                                array('label'=>'Ticket', 'url'=>array('/ticket/admin'),
+				'items'=>array(
+                                                array('label'=>'Crear Ticket', 'url'=>array('/ticket/create')),
+                                                array('label'=>'Buscar Ticket', 'url'=>array('/ticket/view')),
+                                                array('label'=>'Gestionar Tickets', 'url'=>array('/ticket/admin'))
+                                    ),		
+                                ),
+				array('label'=>'Contacto', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

@@ -156,3 +156,152 @@ Stack trace:
 REQUEST_URI=/soporte/ticket/4.jsp
 HTTP_REFERER=http://localhost/soporte/ticket/4.jsp
 ---
+2013/11/19 18:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "comentario"' in C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario')
+#1 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/soporte/comentario
+---
+2013/11/19 18:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "adjuntos"' in C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adjuntos')
+#1 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/soporte/adjuntos
+---
+2013/11/19 19:41:39 [error] [exception.CException] exception 'CException' with message 'El alias "application.extensions.mbmenu.MbMenu" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\wamp\www\desarrollo\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ComentariosController), 'application.ext...', Array)
+#2 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\soporte\protected\views\layouts\main.php(54): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#5 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#6 C:\wamp\www\desarrollo\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#7 C:\wamp\www\desarrollo\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#8 C:\wamp\www\desarrollo\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#9 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\wamp\www\soporte\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#13 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#14 C:\wamp\www\desarrollo\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#15 C:\wamp\www\soporte\protected\controllers\ComentariosController.php(79): CController->render('create', Array)
+#16 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(49): ComentariosController->actionCreate()
+#17 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentarios/cre...')
+#27 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/soporte/comentarios/create.jsp
+HTTP_REFERER=http://localhost/soporte/comentarios
+---
+2013/11/19 19:43:16 [error] [exception.CException] exception 'CException' with message 'El alias "application.extensions.mbmenu.MbMenu" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\wamp\www\desarrollo\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\soporte\protected\views\layouts\main.php(54): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#5 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#6 C:\wamp\www\desarrollo\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#7 C:\wamp\www\desarrollo\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\wamp\www\desarrollo\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\wamp\www\soporte\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#13 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#14 C:\wamp\www\desarrollo\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#15 C:\wamp\www\soporte\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\desarrollo\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/soporte/
+---
+2013/11/19 19:44:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#10 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/soporte/ticket/view.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/admin.jsp
+---
+2013/11/19 19:45:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/admin')
+#9 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/soporte/ticket/admin.jsp
+HTTP_REFERER=http://localhost/soporte/site/login.jsp
+---
+2013/11/19 19:45:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/admin')
+#9 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/soporte/ticket/admin.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/admin.jsp
+---
+2013/11/19 19:45:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/admin')
+#9 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/soporte/ticket/admin.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/create.jsp
+---

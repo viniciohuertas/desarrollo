@@ -1,0 +1,158 @@
+2013/11/12 03:34:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "saludo/index".' in C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('saludo/index')
+#1 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/niveles2/index.php?r=saludo/index
+---
+2013/11/12 03:41:11 [error] [exception.CException] exception 'CException' with message 'SaludoController cannot find the requested view "index".' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\niveles2\protected\controllers\SaludoController.php(12): CController->render('index', Array)
+#2 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(49): SaludoController->actionIndex()
+#3 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('saludo/index')
+#8 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/niveles2/index.php?r=saludo/index
+---
+2013/11/12 16:26:19 [error] [exception.CException] exception 'CException' with message 'Propiedad "CUrlManager"."showSriptName" no se encuentra definida.' in C:\wamp\www\desarrollo\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\YiiBase.php(220): CComponent->__set('showSriptName', false)
+#1 C:\wamp\www\desarrollo\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/niveles2/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/niveles2/index.php?r=site/index
+---
+2013/11/12 16:26:31 [error] [exception.CException] exception 'CException' with message 'Propiedad "CUrlManager"."showSriptName" no se encuentra definida.' in C:\wamp\www\desarrollo\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\YiiBase.php(220): CComponent->__set('showSriptName', false)
+#1 C:\wamp\www\desarrollo\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/niveles2/
+---
+2013/11/12 16:26:33 [error] [exception.CException] exception 'CException' with message 'Propiedad "CUrlManager"."showSriptName" no se encuentra definida.' in C:\wamp\www\desarrollo\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\YiiBase.php(220): CComponent->__set('showSriptName', false)
+#1 C:\wamp\www\desarrollo\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/niveles2/
+---
+2013/11/12 16:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "saludo" solicitada.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CController.php(270): CController->missingAction('saludo')
+#1 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('saludo')
+#2 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/saludo')
+#3 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/niveles2/site/saludo.jsp
+---
+2013/11/12 16:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "saludo" solicitada.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\desarrollo\yii\framework\web\CController.php(270): CController->missingAction('saludo')
+#1 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('saludo')
+#2 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/saludo')
+#3 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\niveles2\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/niveles2/site/saludo
+---
+2013/11/19 17:19:56 [error] [exception.CException] exception 'CException' with message 'TicketController no ha podido encontrar la vista "cometarios/_form" solicitada.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\soporte\protected\views\ticket\view.php(35): CController->renderPartial('cometarios/_for...', Array)
+#1 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#2 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#3 C:\wamp\www\desarrollo\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\wamp\www\soporte\protected\controllers\TicketController.php(56): CController->render('view', Array)
+#6 [internal function]: TicketController->actionView('4')
+#7 C:\wamp\www\desarrollo\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TicketController), Array)
+#8 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TicketController), Object(ReflectionMethod), Array)
+#9 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#19 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/soporte/ticket/4.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/4.jsp
+---
+2013/11/19 17:20:07 [error] [exception.CException] exception 'CException' with message 'TicketController no ha podido encontrar la vista "/cometarios/_form" solicitada.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\soporte\protected\views\ticket\view.php(35): CController->renderPartial('/cometarios/_fo...', Array)
+#1 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#2 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#3 C:\wamp\www\desarrollo\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\wamp\www\soporte\protected\controllers\TicketController.php(56): CController->render('view', Array)
+#6 [internal function]: TicketController->actionView('4')
+#7 C:\wamp\www\desarrollo\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TicketController), Array)
+#8 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TicketController), Object(ReflectionMethod), Array)
+#9 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#19 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/soporte/ticket/4.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/4.jsp
+---
+2013/11/19 18:34:51 [error] [exception.CException] exception 'CException' with message 'TicketController no ha podido encontrar la vista "/cometarios/_form" solicitada.' in C:\wamp\www\desarrollo\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\soporte\protected\views\ticket\view.php(35): CController->renderPartial('/cometarios/_fo...', Array)
+#1 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sop...')
+#2 C:\wamp\www\desarrollo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sop...', Array, true)
+#3 C:\wamp\www\desarrollo\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sop...', Array, true)
+#4 C:\wamp\www\desarrollo\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\wamp\www\soporte\protected\controllers\TicketController.php(56): CController->render('view', Array)
+#6 [internal function]: TicketController->actionView('4')
+#7 C:\wamp\www\desarrollo\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TicketController), Array)
+#8 C:\wamp\www\desarrollo\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TicketController), Object(ReflectionMethod), Array)
+#9 C:\wamp\www\desarrollo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\desarrollo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\desarrollo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\wamp\www\desarrollo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\desarrollo\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\desarrollo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\wamp\www\desarrollo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ticket/view')
+#19 C:\wamp\www\desarrollo\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\wamp\www\soporte\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/soporte/ticket/4.jsp
+HTTP_REFERER=http://localhost/soporte/ticket/4.jsp
+---
